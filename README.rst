@@ -6,7 +6,7 @@ Demo RESTfull server with a Redis persistant store
 Introduction
 ------------
 
-The project goal is to create a simple RESTfull web service with a Redis
+The project goal is to create a simple RESTfull web service with a `Redis <http://redis.io>`_
 (backend) persistent store.  This code is based on Miguel Grinbergs Flask
 Restful tools and his RESTfull tutorial code.  You'll notice I made no 
 attempt to disguise the fact that I'm re-using this code.
@@ -25,8 +25,8 @@ description     description of the ToDo task
 done            boolean to indicated if this task is complete
 ==============  =================================================
 
-The data is inserted and retrieved in JSON format.
-All ToDo tasks are referenced by their task ID
+The data is inserted and retrieved in `JSON <http://www.json.org>`_ format.
+All ToDo tasks are referenced by their (integer based) task ID.
 
 How can I test it
 -----------------
@@ -56,5 +56,14 @@ calls using curl as described in the following sample commands:
 
     curl -u miguel:python  -i -X PUT -H "Content-Type: application/json" -d '{ "title": "Buy computer hardware", "description": "don't do it!" }' http://127.0.0.1:5000/todo/api/v1.0/tasks/1
 
+
+Installation
+------------
+
+You'll need to install the following components::
+
+    pip install flask
+    pip install redis
+    pip install flask-httpauth
 
 
