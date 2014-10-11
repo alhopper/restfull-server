@@ -8,8 +8,7 @@ Introduction
 
 The project goal is to create a simple RESTfull web service with a `Redis <http://redis.io>`_
 (backend) persistent store.  This code is based on Miguel Grinbergs Flask
-Restful tools and his RESTfull tutorial code.  You'll notice I made no 
-attempt to disguise the fact that I'm re-using this code.
+Restful tools and his RESTfull tutorial code. 
 
 
 What does it do
